@@ -11,7 +11,8 @@ function showPoem(response) {
 function generatePoem(event) {
   event.preventDefault();
   let poemBox = document.querySelector(".poem-holder");
-  poemBox.innerHTML = "Generating poem...";
+  poemBox.classList.remove("hidden");
+  poemBox.innerHTML = `<div class="blink">Generating poem...</div>`;
   let foodFocus = document.querySelector("#input-text");
   let apiKey = "8o2ff7498032b5ae4f9bt64daad694e7";
   let context =

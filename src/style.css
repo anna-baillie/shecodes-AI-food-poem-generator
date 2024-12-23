@@ -59,6 +59,15 @@ input[type="submit"]:hover {
   font-family: "Jura", sans-serif;
 }
 
+.input-hint {
+  color: rgb(206, 238, 76);
+  font-family: "Jura", sans-serif;
+  font-size: 13px;
+  font-style: italic;
+  text-align: left;
+  margin: 3px 0 0 50px;
+}
+
 .poem-holder {
   width: 90%;
   margin: 20px auto;
@@ -71,6 +80,25 @@ input[type="submit"]:hover {
   font-family: "Jura", sans-serif;
   font-weight: 600;
   font-size: 16px;
+}
+
+.blink {
+  animation: blink-animation 0.8s steps(5, start) infinite;
+  -webkit-animation: blink-animation 0.8s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+.hidden {
+  display: none;
 }
 
 .poem-holder strong {
