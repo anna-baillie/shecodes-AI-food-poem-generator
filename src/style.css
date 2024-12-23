@@ -73,6 +73,11 @@ input[type="submit"]:hover {
   font-size: 16px;
 }
 
+.poem-holder strong {
+  color: rgb(176, 76, 238);
+  font-weight: 600;
+}
+
 footer {
   margin: 0 auto;
   font-family: "Jura", sans-serif;
