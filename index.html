@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>AI poem generator</title>
   </head>
   <body>
@@ -16,21 +24,23 @@
           autofocus
           required
           autocomplete="off"
+          id="input-text"
         />
-        <input type="submit" />
+        <input type="submit" id="submit-prompt" />
       </form>
-      <div class="poem-holder"></div>
+      <div class="poem-holder">Your poem will load here!</div>
     </main>
     <footer>
       Coded by
-      <a href="https://github.com/anna-baillie" target="_blank">Anna Baillie</a>
-      and is
+      <a href="https://github.com/anna-baillie" target="_blank">Anna Baillie</a
+      >,
       <a
         href="https://github.com/anna-baillie/shecodes-AI-food-poem-generator"
         target="_blank"
         >open-sourced on GitHub</a
       ><br />
-      Hosted on <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+      and hosted on
+      <a href="https://www.netlify.com/" target="_blank">Netlify</a>
     </footer>
     <script src="src/index.js"></script>
   </body>
